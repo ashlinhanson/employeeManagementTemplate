@@ -1,25 +1,30 @@
 .jumbotron {
-    background-color: #9197AE;
+    background-color: #A8E6CF;
     font-family: "Abril Fatface";
+    border-bottom : 10px solid;
+    border-color : #DB93B0;
 }
 
 .card-header {
-    background-color:  #EDFBC1;
+    background-color:  #DCEDC1;
     border : 3px solid;
-    border-color: #273043;
+    border-color: #DB93B0;
     font-family: "Abril Fatface";
 }
 
 .card-body {
-    background-color: #273043;
+    background-color: #A8E6CF;
     font-family: "Montserrat";
+    border : 3px solid;
+    border-color: #DB93B0;
 }
 
 .list-group-item{
-    background-color: #F6F6E9;
+    background-color: #e6f4ce;
     font-family: "Montserrat";
+    font-weight: bolder;
 }
 
 body{
-    background-color: #FDF5BF;
+    background-color: #FFD3B6;
 }
