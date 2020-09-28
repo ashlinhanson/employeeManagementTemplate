@@ -1,0 +1,25 @@
+.jumbotron {
+    background-color: #9197AE;
+    font-family: "Abril Fatface";
+}
+
+.card-header {
+    background-color:  #EDFBC1;
+    border : 3px solid;
+    border-color: #273043;
+    font-family: "Abril Fatface";
+}
+
+.card-body {
+    background-color: #273043;
+    font-family: "Montserrat";
+}
+
+.list-group-item{
+    background-color: #F6F6E9;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #FDF5BF;
+}
