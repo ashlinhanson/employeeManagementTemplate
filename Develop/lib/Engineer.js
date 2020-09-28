@@ -4,7 +4,7 @@ const Employee = require("../lib/Employee.js");
 class Engineer extends Employee {
     constructor(name, id, email, github){
         super(name, id, email);
-        this.github;
+        this.github = github;
     };
     //engineers use github and need that added to their card
     getGithub(){

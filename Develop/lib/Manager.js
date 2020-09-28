@@ -4,7 +4,7 @@ const Employee = require("../lib/Employee.js");
 class Manager extends Employee {
     constructor(name, id, email, officeNumber){
         super(name, id, email);
-        this.officeNumber;
+        this.officeNumber = officeNumber;
     };
     //managers have an office number and is a point on contact and needs to added the card.
     getOfficeNumber(){

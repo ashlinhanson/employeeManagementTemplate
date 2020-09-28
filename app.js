@@ -7,6 +7,8 @@ const fs = require("fs");
 const renderer = require("./lib/htmlRenderer");
 const { listenerCount } = require("process");
 
+const team = [];
+
 function employeeInfo(){
     return inquirer.prompt([
         {
