@@ -19,8 +19,8 @@ class Employee {
         return(this.email);
     };
 
-    getPosition(){
-        return(this.position)
+    getRole(){
+        return(this.role)
     };
 };
 

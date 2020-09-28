@@ -1,21 +1,25 @@
-const Manager = require("./lib/Manager.js");
-const Engineer = require("./lib/Engineer.js");
-const Intern = require("./lib/Intern.js");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-const renderer = require("./lib/htmlRenderer");
-const { listenerCount } = require("process");
 
 const team = [];
+// const stringArr = JSON.stringify(team);
+
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
+
+const render = require("./lib/htmlRenderer");
 
 function employeeInfo(){
-    return inquirer.prompt([
+    inquirer.prompt([
         {
             type: "list",
             message: "What type of employee would you like add?",
             name: "name",
-            choices: ["Intern", "Engineer", "Manager"],
+            choices: ["Intern", "Engineer", "Manager", "Team Complete"],
         },
     ]).then(val => {
         if (val.name === "Intern"){
@@ -24,9 +28,11 @@ function employeeInfo(){
             engineerInfo();
         }else if(val.name === "Manager"){
             managerInfo();
-        }
-    })
-}
+        }else if(val.name === "Team Complete"){
+            generateHTML(outputPath, render(team));
+        };
+    });
+};
 
 function managerInfo(){
     return inquirer.prompt([
@@ -107,11 +113,11 @@ function internInfo(){
 };
 
 function generateHTML(fileName, data) {
-    fs.writeFile(fileName, data, "utf8", function(err){
-        if(err){
+    fs.writeFile(fileName, data, "utf8", function (err){
+        if (err){
             throw err;
         }
-        console.log("All done! The employee info has been completed!");
+        console.log("All done! Your team info is now complete!");
     });
 };
 

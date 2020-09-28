@@ -1,5 +1,5 @@
 //Engineer constructor from the Employee constructor
-const Employee = require("../lib/Employee.js");
+const Employee = require("./Employee");
 
 class Engineer extends Employee {
     constructor(name, id, email, github){
@@ -11,7 +11,7 @@ class Engineer extends Employee {
         return(this.github);
     };
 
-    getPosition(){
+    getRole(){
         return "Engineer";
     };
 };
