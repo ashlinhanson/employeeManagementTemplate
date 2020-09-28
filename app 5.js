@@ -68,12 +68,7 @@ function engineerInfo(){
         },
         {
             message: "What is the engineer's github username?",
-            name: "github"
+            name: ""
         }
-    ]).then(function(answer){
-        let engineer = new Engineer(answer.name, answer.id, answer.email, answer.github)
-        team.push(engineer);
-
-        employeeInfo();
-    })
+    ])
 }
