@@ -4,3 +4,5 @@ const Intern = require("./lib/Intern.js");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const renderer = require("./lib/htmlRenderer");
+
