@@ -5,8 +5,28 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const renderer = require("./lib/htmlRenderer");
+const { listenerCount } = require("process");
 
-function managerCard(){
+function employeeInfo(){
+    return inquirer.prompt([
+        {
+            type: "list",
+            message: "What type of employee would you like add?",
+            name: "name",
+            choices: ["Intern", "Engineer", "Manager"],
+        },
+    ]).then(val => {
+        if (val.name === "Intern"){
+            internInfo();
+        }else if(val.name === "Engineer"){
+            engineerInfo();
+        }else if(val.name === "Manager"){
+            managerInfo();
+        }
+    })
+}
+
+function managerInfo(){
     return inquirer.prompt([
         {
             message: "What is the manager's name?",
