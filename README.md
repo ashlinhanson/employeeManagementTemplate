@@ -1,6 +1,8 @@
 # Employee Management Template 
  This application allows you to enter team members and their contact information to be generated in this template for max organization and easy retrieval of imperative info during a team project.  
 
+ ![Completed Example](./assets/finalexample.png?raw=true)
+
  ## Table of Contents 
  * [Installation Instructions](#Installation-Instructions) 
  * [Instructions for Use](#Instructions-for-Use) 
