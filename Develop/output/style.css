@@ -7,16 +7,12 @@
 
 .card-header {
     background-color:  #DCEDC1;
-    border : 3px solid;
-    border-color: #DB93B0;
     font-family: "Abril Fatface";
 }
 
 .card-body {
     background-color: #A8E6CF;
     font-family: "Montserrat";
-    border : 3px solid;
-    border-color: #DB93B0;
 }
 
 .list-group-item{
@@ -27,4 +23,10 @@
 
 body{
     background-color: #FFD3B6;
+}
+
+.card {
+    margin: 10px;
+    border: 5px solid;
+    border-color: #DB93B0;
 }
