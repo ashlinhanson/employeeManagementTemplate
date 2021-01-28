@@ -37,12 +37,12 @@
  When the document is completed, you can run a test to ensure the code is working properly and gets all the correct information put in the correct roles. In the Integrated Terminal, type "npm test" to see the results(it will pass them all).
   
 ## Technologies Used
-*HTML5
-*CSS3
-*Bootstrap4
-*JavaScript
-*Node.js
-*Jest
+* HTML5
+* CSS3
+* Bootstrap4
+* JavaScript
+* Node.js
+* Jest
 
 
  ## License  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
